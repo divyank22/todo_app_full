@@ -82,7 +82,7 @@ const submitfrom = async () => {
 const verifyOTPAndRegister = async () => {
   error.value = '';
   successMessage.value = '';
-  const response = await axios.post('/api/login/signup', {
+  const response = await axios.post('/api/auth/signup', {
     name: name.value,
     email: email.value,
     age: age.value,
